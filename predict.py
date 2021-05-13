@@ -10,10 +10,7 @@ This app predicts the **News** type!
 """)
 
 st.header('Input Fake News Data')
-f=open("data\dfcomplete.csv")
-df=pd.read_csv(f)
-f.close()
-st.write(f.closed)
+df=pd.read_csv("data\dfcomplete.csv")
 def Page1(page):
     t = {
     "ABC News Politics": 1,
