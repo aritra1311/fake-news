@@ -10,7 +10,7 @@ This app predicts the **News** type!
 """)
 
 st.header('Input Fake News Data')
-df=pd.read_csv("data\dfcomplete.csv")
+df=pd.read_csv("data/dfcomplete.csv")
 def Page1(page):
     t = {
     "ABC News Politics": 1,
@@ -118,7 +118,7 @@ if st.button("Make predictions"):
     st.write(f)
     df1["Rating"]=pred[0]
     df=df.append(df1, ignore_index=True)
-    df.to_csv("data\dfcomplete.csv",index=False)
+    df.to_csv("data/dfcomplete.csv",index=False)
 
     def filedownload(df, filename):
             csv = df.to_csv(index=False)
